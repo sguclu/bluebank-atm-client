@@ -1,0 +1,108 @@
+table.keyboard {
+  border-collapse: initial;
+}
+
+/* Keyboard fonts *****************************************************************/
+table.keyboard tbody tr td table tbody tr td {
+  font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', 'Trebuchet MS', sans-serif;
+}
+
+/* Keyboard default size **********************************************************/
+table.keyboard.keyboardInputSize1,
+table.keyboard.keyboardInputSize1 * {
+  font-size:8px !important;
+}
+table.keyboard,
+table.keyboard * {
+  font-size:11px !important;
+  background-color: inherit;
+}
+table.keyboard.keyboardInputSize3,
+table.keyboard.keyboardInputSize3 * {
+  font-size:14px !important;
+}
+table.keyboard.keyboardInputSize4,
+table.keyboard.keyboardInputSize4 * {
+  font-size:16px !important;
+}
+table.keyboard.keyboardInputSize5,
+table.keyboard.keyboardInputSize5 * {
+  font-size:20px !important;
+}
+
+/* Keyboard background ************************************************************/
+
+table.keyboard thead tr th {
+  background-color: transparent;
+}
+table.keyboard {
+  //background: url(../images/bkgp.jpg);
+}
+
+/* Keyboard buttons ***************************************************************/
+table.keyboard tbody tr td table tbody tr td {
+  -moz-box-shadow:inset 0 1px 0 0 #ffffff;
+  -webkit-box-shadow:inset 0 1px 0 0 #ffffff;
+  box-shadow:inset 0 1px 0 0 #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+  background-color:#ededed;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  cursor:pointer;
+  color:#171717;
+  text-decoration:none;
+  text-shadow:0 1px 0 #ffffff;
+}
+table.keyboard tbody tr td table tbody tr td:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+  background-color:#dfdfdf;
+}
+table.keyboard tbody tr td table tbody tr td:active {
+  position:relative;
+  top:1px;
+}
+
+/* Head buttons *******************************************************************/
+table.keyboard thead tr th {
+  padding: 5px;
+}
+
+table.keyboard thead tr th span,
+table.keyboard thead tr th strong,
+table.keyboard thead tr th small,
+table.keyboard thead tr th big {
+  background-color: #ededed;
+}
+
+table.keyboard thead tr th span:hover,
+table.keyboard thead tr th strong:hover,
+table.keyboard thead tr th small:hover,
+table.keyboard thead tr th big:hover {
+  background-color:#dfdfdf;
+}
+
+/* Panel border radius ************************************************************/
+table.keyboard,
+table.keyboard thead tr th {
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-left-radius: 0;
+  -moz-border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  border: none;
+}

@@ -1,0 +1,42 @@
+.slot {
+  width: 300px;
+  height: 5px;
+  background-color: black;
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.paper-holder {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  top: 3px;
+  left: 0;
+  right: 0;
+  -ms-transition: height 2s steps(15, end);
+  -moz-transition: height 2s steps(15, end);
+  -webkit-transition: height 2s steps(15, end);
+  -o-transition: height 2s steps(15, end);
+  transition: height 2s steps(15, end);
+}
+
+.paper {
+  position: absolute;
+  width: 274px;
+  left: 5px;
+  bottom: 0;
+  height: 300px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  font-family: Consolas, monaco, monospace, courier;
+  font-size: 8px;
+}
+
+.paper-holder.print {
+  height: 301px;
+}

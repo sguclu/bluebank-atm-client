@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>#id</th>
+      <th>Card Number</th>
+      <th>Balance</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="account in accounts">
+      <td><a href="#/accounts/{{account.id}}"><span ng-bind="account.id"></span></a></td>
+      <td><span ng-bind="account.cardNumber"></span></td>
+      <td>$<span ng-bind="account.balance"></span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

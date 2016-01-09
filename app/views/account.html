@@ -1,0 +1,40 @@
+<div class="jumbotron">
+    <h4><i ng-class="account.closed ? 'fa-lock' : 'fa-unlock'" class="fa"></i> Account</h4>
+    <table class="table">
+        <tbody>
+        <tr>
+          <th>ID</th>
+          <th><span ng-bind="account.id"></span></th>
+        </tr>
+        <tr>
+            <th>Card Number</th>
+            <th><span ng-bind="account.cardNumber"></span></th>
+        </tr>
+        <tr>
+            <th>Balance</th>
+            <th>$<span ng-bind="account.balance"></span></th>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+</div>
+<div class="jumbotron">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Balance</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="transaction in account.transactions| orderBy:'-date'">
+            <td><span ng-bind="transaction.id"></span></td>
+            <td><span ng-bind="transaction.type"></span></td>
+            <td>$<span ng-bind="transaction.amount"></span></td>
+            <td><span ng-bind="transaction.date | date:'yyyy/MM/dd HH:mm:ss'"></span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
