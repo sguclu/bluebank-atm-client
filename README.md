@@ -1,5 +1,6 @@
 # bluebank-atm-client
 
+[![Build Status](https://travis-ci.org/riadmaouchi/bluebank-atm-client.svg)](https://travis-ci.org/riadmaouchi/bluebank-atm-client)
 
 ## Build & development
 
