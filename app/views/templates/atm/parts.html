@@ -1,26 +1,27 @@
 <div class="atm-machine">
-  <img class="machine-bottom-img" src="../../images/machine_bottom.jpg">
-  <img ng-class="{'cash-dispenser-deposit-animation': deposited, 'cash-dispenser-animation': withdrawn}"
-       class="dollar-img"
-       src="../../images/dollars.png">
-  <img class="machine-top-img" src="../../images/machine_top.jpg">
-  <img class="card-holder-bottom-img" src="../../images/card-holder--bottom.png">
-  <img ng-show="cardInserted"
-       ng-class="{'card-inserted-animation': cardInserted}"
-       class="card-img"
-       src="../../images/card.png">
-  <img ng-show="cardEjected"
-       ng-class="{'card-ejected-animation' : cardEjected}"
-       class="card-img"
-       src="../../images/card.png">
-  <img class="card-holder-top-img" src="../../images/card-holder_top.jpg">
-  <img class="green-light-off-img" src="../../images/green-light-off.png">
-  <img ng-class="{'card-light-animation' : cardInserted}"
-       class="green-light-on-img"
-       src="../../images/green-light-on.png">
-  <img class="orange-light-off-img" src="../../images/orange-light-off.png">
-  <img ng-class="{'cash-dispenser-light-animation' : deposited || withdrawn}"
-       class="orange-light-on-img"
-       src="../../images/orange-light-on.png">
+    <div class="machine-bottom"></div>
+    <div class="dollar"
+         ng-class="{'cash-dispenser-deposit-animation': deposited, 'cash-dispenser-animation': withdrawn}">
+    </div>
+    <div class="machine-top"></div>
+    <div class="card-holder-bottom"></div>
+    <div ng-show="cardInserted"
+         class="card"
+         ng-class="{'card-inserted-animation': cardInserted}">
+    </div>
+    <div ng-show="cardEjected"
+         class="card"
+         ng-class="{'card-ejected-animation' : cardEjected}">
+    </div>
+    <div class="card-holder-top"></div>
+    <div class="green-light-off"></div>
+    <div class="green-light-on"
+         ng-class="{'card-light-animation' : cardInserted}">
+    </div>
+    <div class="orange-light-off"></div>
+    <div class="orange-light-on"
+         ng-class="{'cash-dispenser-light-animation' : deposited || withdrawn}">
+
+    </div>
 </div>
 

@@ -1,83 +1,93 @@
-.machine-bottom-img {
-  position: absolute;
-  top: 243px;
-  width: 300px;
-  height: 63px;
-  left: 34px
-}
-
-.dollar-img {
-  position: absolute;
-  top: 172px;
-  width: 125px;
-  height: 66px;
-  left: 118px
-}
-
-.machine-top-img {
+.machine-top {
   position: absolute;
   top: 56px;
   width: 300px;
   height: 187px;
-  left: 34px
+  left: 34px;
+  background-image: url('../images/machine_top.jpg');
 }
 
-.card-holder-bottom-img {
+.machine-bottom {
+  position: absolute;
+  top: 243px;
+  width: 300px;
+  height: 63px;
+  left: 34px;
+  background-image: url('../images/machine_bottom.jpg');
+}
+
+.dollar {
+  position: absolute;
+  top: 172px;
+  width: 125px;
+  height: 66px;
+  left: 118px;
+  background-image: url('../images/dollars.png');
+}
+
+.card-holder-bottom {
   position: absolute;
   top: 116px;
   width: 78px;
   height: 19px;
-  left: 138px
+  left: 138px;
+  background-image: url('../images/card-holder--bottom.png');
 }
 
-.card-img {
+.card {
   position: absolute;
   top: 476px;
   width: 56px;
   height: 87px;
-  left: 157px
+  left: 157px;
+  background-image: url('../images/card.png');
 }
 
-.card-holder-top-img {
+.card-holder-top {
   position: absolute;
   top: 17px;
   width: 113px;
   height: 100px;
-  left: 121px
+  left: 121px;
+  background-image: url('../images/card-holder_top.jpg');
 }
 
-.green-light-off-img {
+.green-light-off {
   position: absolute;
   top: 95px;
   width: 14px;
   height: 9px;
-  left: 168px
+  left: 168px;
+  background-image: url('../images/green-light-off.png');
 }
 
-.green-light-on-img {
+.green-light-on {
   position: absolute;
   top: 95px;
   width: 16px;
   height: 11px;
   opacity: 0;
-  left: 172px
+  left: 172px;
+  background-image: url('../images/green-light-on.png');
 }
 
-.orange-light-off-img {
+.orange-light-off {
   position: absolute;
   top: 220px;
   width: 14px;
   height: 9px;
-  left: 171px
+  left: 171px;
+  background-image: url('../images/green-light-off.png');
 }
 
-.orange-light-on-img {
+.orange-light-on {
   position: absolute;
   top: 220px;
   width: 16px;
   height: 11px;
   opacity: 0;
-  left: 170px
+  left: 170px;
+  background-image: url('../images/orange-light-on.png');
 }
 
 .atm-machine {
@@ -91,7 +101,7 @@
 }
 
 .atm-machine .card-inserted-animation {
-  -webkit-animation: card-inserted-animation-keyframes .8s linear 0s normal forwards ;
+  -webkit-animation: card-inserted-animation-keyframes .8s linear 0s normal forwards;
   -moz-animation: card-inserted-animation-keyframes .8s linear 0s normal forwards;
   animation: card-inserted-animation-keyframes .8s linear 0s normal forwards
 }
@@ -103,9 +113,9 @@
 }
 
 .atm-machine .cash-dispenser-light-animation {
-  -webkit-animation: cash-dispenser-light-animation-keyframes 4.2s linear 0s  normal forwards;
-  -moz-animation: cash-dispenser-light-animation-keyframes 4.2s linear 0s  normal forwards;
-  animation: cash-dispenser-light-animation-keyframes 4.2s linear 0s  normal forwards
+  -webkit-animation: cash-dispenser-light-animation-keyframes 4.2s linear 0s normal forwards;
+  -moz-animation: cash-dispenser-light-animation-keyframes 4.2s linear 0s normal forwards;
+  animation: cash-dispenser-light-animation-keyframes 4.2s linear 0s normal forwards
 }
 
 @-webkit-keyframes cash-dispenser-animation-keyframes {
@@ -178,15 +188,15 @@
 }
 
 .atm-machine .cash-dispenser-animation {
-  -webkit-animation: cash-dispenser-animation-keyframes 4.2s linear 0s  normal forwards;
-  -moz-animation: cash-dispenser-animation-keyframes 4.2s linear 0s  normal forwards;
-  animation: cash-dispenser-animation-keyframes 4.2s linear 0s  normal forwards
+  -webkit-animation: cash-dispenser-animation-keyframes 4.2s linear 0s normal forwards;
+  -moz-animation: cash-dispenser-animation-keyframes 4.2s linear 0s normal forwards;
+  animation: cash-dispenser-animation-keyframes 4.2s linear 0s normal forwards
 }
 
 .atm-machine .cash-dispenser-deposit-animation {
-  -webkit-animation: cash-dispenser-animation-keyframes 4.2s linear 0s  reverse forwards;
-  -moz-animation: cash-dispenser-animation-keyframes 4.2s linear 0s  reverse forwards;
-  animation: cash-dispenser-animation-keyframes 4.2s linear 0s  reverse forwards
+  -webkit-animation: cash-dispenser-animation-keyframes 4.2s linear 0s reverse forwards;
+  -moz-animation: cash-dispenser-animation-keyframes 4.2s linear 0s reverse forwards;
+  animation: cash-dispenser-animation-keyframes 4.2s linear 0s reverse forwards
 }
 
 @-moz-keyframes card-light-animation-keyframes {
