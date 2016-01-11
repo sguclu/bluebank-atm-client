@@ -12,11 +12,11 @@ define([
    */
   angular.module('bluebankAtmClientApp.services.healthcheck', [])
     .factory('healthcheck', function ($resource) {
-      return $resource('http://localhost:8080/admin/healthcheck/:healthcheckId',
+      return $resource('http://localhost:8180/admin/healthcheck/:healthcheckId',
         {healthcheck: '@healthcheckId'}, {
           'monitoring': {
             method: 'GET',
-            url: 'http://localhost:8080/admin/healthcheck'
+            url: 'http://localhost:8180/admin/healthcheck'
           }
         }
       );

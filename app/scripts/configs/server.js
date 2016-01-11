@@ -12,6 +12,6 @@ define([
    */
   angular.module('bluebankAtmClientApp.configs.ServerConfig', [])
     .constant('serverConfig', {
-      serverAddress: 'ws://localhost:8080/events'
+      serverAddress: 'ws://localhost:8180/events'
     });
 });

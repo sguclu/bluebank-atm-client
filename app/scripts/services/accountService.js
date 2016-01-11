@@ -12,12 +12,12 @@ define([
    */
   angular.module('bluebankAtmClientApp.services.account', [])
     .factory('account', function ($resource) {
-      return $resource('http://localhost:8080/accounts/:accountId',
+      return $resource('http://localhost:8180/accounts/:accountId',
         {accountId: '@accountId'},
         {
           'accounts': {
             method: 'GET',
-            url: 'http://localhost:8080/accounts',
+            url: 'http://localhost:8180/accounts',
             isArray: true
           }
         }

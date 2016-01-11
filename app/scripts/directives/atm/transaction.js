@@ -26,6 +26,10 @@ define([
           scope.inquiry = function () {
             scope.state.inquirySelected();
           };
+
+          scope.withdraw = function () {
+            scope.state.withdrawSelected();
+          };
         }
       };
     });

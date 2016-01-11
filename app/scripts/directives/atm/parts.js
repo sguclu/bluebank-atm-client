@@ -26,11 +26,17 @@ define([
             scope.cardEjected = true;
             scope.cardInserted = false;
             scope.deposited = false;
+            scope.withdrawn = false;
           });
 
           scope.$on('deposited', function () {
             console.debug('deposited');
             scope.deposited = true;
+          });
+
+          scope.$on('withdrawn', function () {
+            console.debug('withdrawn');
+            scope.withdrawn = true;
           });
         }
       };

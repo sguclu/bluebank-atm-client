@@ -1,6 +1,6 @@
 <div class="atm-machine">
   <img class="machine-bottom-img" src="../../images/machine_bottom.jpg">
-  <img ng-class="{'cash-dispenser-deposit-animation': deposited}"
+  <img ng-class="{'cash-dispenser-deposit-animation': deposited, 'cash-dispenser-animation': withdrawn}"
        class="dollar-img"
        src="../../images/dollars.png">
   <img class="machine-top-img" src="../../images/machine_top.jpg">
@@ -19,7 +19,7 @@
        class="green-light-on-img"
        src="../../images/green-light-on.png">
   <img class="orange-light-off-img" src="../../images/orange-light-off.png">
-  <img ng-class="{'cash-dispenser-light-animation' : deposited}"
+  <img ng-class="{'cash-dispenser-light-animation' : deposited || withdrawn}"
        class="orange-light-on-img"
        src="../../images/orange-light-on.png">
 </div>

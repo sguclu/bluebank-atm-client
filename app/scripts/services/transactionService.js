@@ -12,11 +12,11 @@ define([
    */
   angular.module('bluebankAtmClientApp.services.transaction', [])
     .factory('transaction', function ($resource) {
-      return $resource('http://localhost:8080/transactions/:transactionId',
+      return $resource('http://localhost:8180/transactions/:transactionId',
         {transactionId: '@transactionId'}, {
           'sessions': {
             method: 'GET',
-            url: 'http://localhost:8080/transactions',
+            url: 'http://localhost:8180/transactions',
             isArray: true
           }
         }

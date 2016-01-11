@@ -23,7 +23,9 @@ define([
           {name: 'pinEntered', from: ['cardValidating', 'pinValidating'], to: 'pinValidating'},
           {name: 'pinValidated', from: 'pinValidating', to: 'dispensing'},
           {name: 'depositSelected', from: 'dispensing', to: 'depositing'},
-          {name: 'amountSelected', from: 'depositing', to: 'cardEjecting'},
+          {name: 'withdrawSelected', from: 'dispensing', to: 'withdrawing'},
+          {name: 'deposited', from: 'depositing', to: 'cardEjecting'},
+          {name: 'withdrawn', from: 'withdrawing', to: 'cardEjecting'},
           {name: 'cardEjected', from: 'cardEjecting', to: 'cardWaiting'},
           {name: 'inquirySelected', from: 'dispensing', to: 'inquiring'},
           {name: 'inquired', from: 'inquiring', to: 'cardEjecting'},
@@ -32,6 +34,7 @@ define([
           {name: 'close', from: 'cardRetaining', to: 'cardWaiting'}
         ],
         callbacks: {
+          onchangestate: function(event, from, to) { console.debug("CHANGED STATE: " + from + " to " + to); },
           oncardEjecting: function () {
             state.cardEjected();
             $timeout(function () {
@@ -63,9 +66,20 @@ define([
             });
             return state.ASYNC;
           },
+          onwithdrawn: function(){
+            $timeout(function () {
+              $scope.$broadcast('withdrawn');
+            });
+          },
 
-          onbeforeamountSelected: function (event, from, to, amount) {
+          onbeforedeposited: function (event, from, to, amount) {
             webSocket.emit('DEPOSIT_REQUEST', {
+              transactionId: transactionId,
+              amount: amount
+            });
+          },
+          onbeforewithdrawn: function (event, from, to, amount) {
+            webSocket.emit('WITHDRAW_REQUEST', {
               transactionId: transactionId,
               amount: amount
             });

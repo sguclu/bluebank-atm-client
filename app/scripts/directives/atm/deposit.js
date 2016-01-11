@@ -20,9 +20,15 @@ define([
         },
         link: function (scope) {
           scope.amounts = atmConfig.atm.amounts;
+
           scope.deposit = function (amount) {
-            scope.state.amountSelected(amount);
+            scope.state.deposited(amount);
           };
+
+          scope.withdraw = function (amount) {
+            scope.state.withdrawn(amount);
+          };
+
         }
       };
     });
