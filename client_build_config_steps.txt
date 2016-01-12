@@ -1,0 +1,11 @@
+1. install ruby : http://rubyinstaller.org/downloads/
+2. install compass : 
+gem update --system
+gem install compass
+3. install node.js
+4. install npm modules : bower grunt-cli compass
+C:\Program Files\nodejs\npm.cmd install -g bower grunt grunt-cli compass
+5. download packages with bower
+C:\Users\sguclu\AppData\Roaming\npm\bower.cmd update
+6. run client 
+C:\Users\sguclu\AppData\Roaming\npm\grunt.cmd serve
